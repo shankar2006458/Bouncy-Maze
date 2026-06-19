@@ -1345,14 +1345,18 @@
                     ], optimalMoves: 6
                 },
                 {
-                    id: 5, name: 'Serpentine', difficulty: 'easy', grid: [
-                        [0, 0, 0, 0, 0, 0],
+                    id: 5,
+                    name: 'Serpentine',
+                    difficulty: 'easy',
+                    grid: [
+                        [0, 0, 1, 1, 1, 0],
+                        [0, 0, 1, 0, 1, 0],
                         [0, 2, 1, 0, 1, 0],
                         [0, 1, 1, 1, 1, 0],
-                        [0, 0, 1, 1, 1, 0],
-                        [0, 0, 0, 1, 0, 0],
-                        [0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 6
+                        [0, 1, 0, 0, 0, 0],
+                        [0, 1, 1, 1, 0, 0]
+                    ],
+                    optimalMoves: 9
                 },
                 {
                     id: 6, name: 'Escalator', difficulty: 'easy', grid: [
@@ -1367,14 +1371,18 @@
 
                 // ===== MEDIUM LEVELS =====
                 {
-                    id: 7, name: 'Expansion', difficulty: 'medium', grid: [
+                    id: 7,
+                    name: 'Expansion',
+                    difficulty: 'medium',
+                    grid: [
                         [0, 0, 0, 0, 0, 0],
                         [0, 2, 1, 1, 1, 0],
-                        [0, 1, 0, 0, 1, 0],
-                        [0, 1, 0, 0, 1, 0],
+                        [0, 0, 0, 0, 1, 0],
                         [0, 1, 1, 1, 1, 0],
-                        [0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 4
+                        [0, 1, 0, 0, 0, 0],
+                        [0, 1, 1, 1, 0, 0]
+                    ],
+                    optimalMoves: 8
                 },
                 {
                     id: 8, name: 'Dead Ends', difficulty: 'medium', grid: [
@@ -1387,14 +1395,18 @@
                     ], optimalMoves: 8
                 },
                 {
-                    id: 9, name: 'The Corridor', difficulty: 'medium', grid: [
+                    id: 9,
+                    name: 'Snake Corridor',
+                    difficulty: 'medium',
+                    grid: [
                         [0, 0, 0, 0, 0, 0],
                         [0, 2, 1, 1, 1, 0],
                         [0, 1, 0, 0, 1, 0],
-                        [0, 1, 1, 0, 1, 0],
-                        [0, 0, 1, 1, 1, 0],
-                        [0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 6
+                        [0, 1, 1, 1, 1, 0],
+                        [0, 0, 0, 0, 1, 0],
+                        [0, 1, 1, 1, 1, 0]
+                    ],
+                    optimalMoves: 9
                 },
                 {
                     id: 10, name: 'Detour', difficulty: 'medium', grid: [
@@ -1407,24 +1419,32 @@
                     ], optimalMoves: 6
                 },
                 {
-                    id: 11, name: 'The Fork', difficulty: 'medium', grid: [
-                        [0, 0, 0, 0, 0, 0],
-                        [0, 2, 1, 1, 1, 0],
-                        [0, 1, 0, 0, 1, 0],
-                        [0, 1, 0, 1, 1, 0],
-                        [0, 1, 1, 1, 0, 0],
-                        [0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 6
+                    id: 11,
+                    name: 'Fortress',
+                    difficulty: 'medium',
+                    grid: [
+                        [1, 1, 1, 1, 1, 1],
+                        [1, 0, 0, 0, 0, 1],
+                        [1, 0, 2, 1, 0, 1],
+                        [1, 1, 1, 1, 0, 1],
+                        [1, 0, 0, 0, 0, 1],
+                        [1, 1, 1, 1, 1, 1]
+                    ],
+                    optimalMoves: 12
                 },
                 {
-                    id: 12, name: 'Loopback', difficulty: 'medium', grid: [
-                        [0, 0, 0, 0, 0, 0],
-                        [0, 2, 1, 1, 1, 0],
-                        [0, 1, 0, 0, 1, 0],
-                        [0, 1, 0, 0, 1, 0],
-                        [0, 1, 1, 1, 1, 0],
-                        [0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 4
+                    id: 12,
+                    name: 'Loopback',
+                    difficulty: 'hard',
+                    grid: [
+                        [2, 1, 1, 1, 1, 1],
+                        [1, 0, 0, 1, 0, 1],
+                        [1, 1, 0, 1, 0, 1],
+                        [0, 1, 0, 1, 3, 1],
+                        [1, 1, 1, 0, 0, 1],
+                        [1, 0, 1, 1, 1, 4]
+                    ],
+                    optimalMoves: 12, teleporters: { 3: null, 4: null }
                 },
                 {
                     id: 13,
@@ -1446,11 +1466,11 @@
                         [0, 0, 0, 0, 0, 0, 0],
                         [0, 2, 1, 1, 1, 1, 0],
                         [0, 1, 0, 0, 0, 1, 0],
-                        [0, 1, 1, 1, 1, 1, 0],
-                        [0, 0, 0, 0, 0, 1, 0],
+                        [0, 0, 3, 1, 1, 1, 0],
+                        [0, 4, 0, 0, 0, 1, 0],
                         [0, 1, 1, 1, 1, 1, 0],
                         [0, 0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 10
+                    ], optimalMoves: 10, teleporters: { 3: null, 4: null }
                 },
 
                 // ===== HARD LEVELS – TELEPORTERS =====
@@ -1466,24 +1486,38 @@
                     ], optimalMoves: 12, teleporters: { 3: null, 4: null }
                 },
                 {
-                    id: 16, name: 'Hard Reset', difficulty: 'hard', grid: [
-                        [0, 0, 0, 0, 0, 0, 0],
-                        [0, 2, 1, 0, 1, 3, 0],
-                        [0, 1, 0, 0, 1, 0, 0],
-                        [0, 1, 1, 1, 1, 4, 0],
-                        [0, 0, 1, 0, 0, 1, 0],
-                        [0, 1, 1, 1, 1, 1, 0],
-                        [0, 0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 12, teleporters: { 3: null, 4: null }
+                    id: 16,
+                    name: 'Hard Reset',
+                    difficulty: 'hard',
+                    grid: [
+                        [2,1,1,1,1,1,1,1],
+                        [1,0,0,0,0,0,0,1],
+                        [1,1,1,1,1,1,0,1],
+                        [0,0,0,0,0,1,0,1],
+                        [1,1,1,1,0,1,1,1],
+                        [1,0,0,1,0,0,0,1],
+                        [1,1,1,1,1,1,1,4],
+                        [0,0,0,0,0,0,1,3]
+                    ],
+                    optimalMoves: 32,
+                    teleporters: {}
                 },
                 {
-                    id: 17, name: 'Cross Warp', difficulty: 'hard', grid: [
-                        [0, 0, 0, 0, 0, 0, 0],
-                        [0, 2, 1, 3, 1, 1, 0],
-                        [0, 1, 0, 0, 0, 1, 0],
-                        [0, 1, 1, 4, 1, 1, 0],
-                        [0, 0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 10, teleporters: { 3: null, 4: null }
+                    id: 17,
+                    name: 'Cross Warp',
+                    difficulty: 'hard',
+                    grid: [
+                        [2,1,1,1,0,1,1,1],
+                        [1,0,0,1,0,1,0,1],
+                        [1,1,0,1,1,1,0,1],
+                        [0,1,0,0,0,1,1,1],
+                        [1,1,1,3,0,0,0,1],
+                        [1,0,0,1,1,1,0,1],
+                        [1,1,0,0,0,1,1,1],
+                        [0,1,1,1,4,1,0,1]
+                    ],
+                    optimalMoves: 30,
+                    teleporters: { 3: 4, 4: 3 }
                 },
                 {
                     id: 18, name: 'Teleporter Chain', difficulty: 'hard', grid: [
@@ -1496,15 +1530,21 @@
                     ], optimalMoves: 14, teleporters: { 3: null, 4: null, 5: null, 6: null }
                 },
                 {
-                    id: 19, name: 'Gravity Well', difficulty: 'hard', grid: [
-                        [0, 0, 0, 0, 0, 0, 0],
-                        [0, 2, 1, 0, 0, 1, 0],
-                        [0, 1, 1, 1, 0, 1, 0],
-                        [0, 0, 1, 3, 1, 1, 0],
-                        [0, 1, 1, 1, 0, 1, 0],
-                        [0, 1, 0, 0, 0, 1, 0],
-                        [0, 0, 0, 0, 0, 0, 0]
-                    ], optimalMoves: 14, teleporters: { 3: null }
+                    id: 19,
+                    name: 'Gravity Well',
+                    difficulty: 'hard',
+                    grid: [
+                        [2,1,1,1,1,1,1,1],
+                        [1,0,0,0,0,0,0,1],
+                        [1,1,1,1,1,1,0,1],
+                        [0,0,0,3,0,1,0,1],
+                        [1,1,1,1,0,1,1,1],
+                        [1,0,0,1,0,0,0,1],
+                        [1,1,1,1,1,1,1,1],
+                        [0,0,0,0,0,0,0,4]
+                    ],
+                    optimalMoves: 30,
+                    teleporters: { 3: 4 }
                 },
                 {
                     id: 20, name: 'Pinball', difficulty: 'hard', grid: [
@@ -2146,7 +2186,12 @@
                 const level = levelData[currentLevelIndex];
                 const best = getLevelBest(level.id);
                 bestDisplay.textContent = best !== null ? best : '—';
-                btnUndo.classList.toggle('visible', moveHistory.length > 0 && !isAnimating && !isLevelComplete());
+                btnUndo.classList.toggle(
+                    'visible',
+                    moveHistory.length > 0 && !isLevelComplete()
+                );
+
+                btnUndo.disabled = isAnimating;
             }
 
             function updatePowerStatus() {
@@ -2219,7 +2264,6 @@
                 if (isAnimating || gamePaused) return;
                 if (!gameStarted) {
                     gameStarted = true;
-                    startTimer();
                 }
                 const path = getSlidePath(playerRow, playerCol, dr, dc);
                 if (path.length === 0) {
@@ -2236,8 +2280,7 @@
                     col: posBefore.col,
                     litGrid: litBefore,
                     litPathTiles: litCountBefore,
-                    moveCount: moveCount - 1,
-                    timerSeconds: timerSeconds,
+                    moveCount: moveCount - 1,                 
                 });
                 if (moveHistory.length > 50) moveHistory.shift();
                 sfxMove();
@@ -2296,7 +2339,6 @@
                 litGrid = prev.litGrid;
                 litPathTiles = prev.litPathTiles;
                 moveCount = prev.moveCount;
-                timerSeconds = prev.timerSeconds;
                 updateTimerDisplay();
                 for (let r = 0; r < grid.length; r++)
                     for (let c = 0; c < grid[0].length; c++)
@@ -2368,20 +2410,27 @@
 
             function resetLevel() {
                 if (isAnimating) return;
+
                 stopTimer();
                 loadLevel(currentLevelIndex);
+
                 victoryOverlay.classList.add('hidden');
                 btnNext.style.display = 'none';
-                gameStarted = false;
+
+                gameStarted = true;
                 gamePaused = false;
+
+                startTimer();
+
                 pauseOverlay.classList.add('hidden');
             }
 
             function goToNextLevel() {
                 if (currentLevelIndex < levelData.length - 1) {
                     loadLevel(currentLevelIndex + 1);
-                    gameStarted = false;
+                    gameStarted = true;   // ← Changed to true
                     gamePaused = false;
+                    startTimer();         // ← Add this line
                 }
             }
 
@@ -2446,9 +2495,10 @@
                             sfxClick();
                             loadLevel(i);
                             levelSelectOverlay.classList.add('hidden');
-                            gameStarted = false;
+                            gameStarted = true;      // ← Changed to true
                             gamePaused = false;
                             startOverlay.classList.add('hidden');
+                            startTimer();            // ← Add this line
                         });
                     }
                     dot.title = isLevelUnlocked(lv.id) ? `${lv.name} (${lv.difficulty})` : 'Locked';
@@ -2537,7 +2587,14 @@
             document.getElementById('btnPauseResume').addEventListener('click', resumeGame);
             document.getElementById('btnPauseRestart').addEventListener('click', () => {
                 pauseOverlay.classList.add('hidden');
-                resetLevel();
+
+                stopTimer();
+                loadLevel(currentLevelIndex);
+
+                gameStarted = true;
+                gamePaused = false;
+
+                startTimer();
             });
             document.getElementById('btnPauseQuit').addEventListener('click', quitToMenu);
             document.getElementById('btnPauseSettings').addEventListener('click', () => {
